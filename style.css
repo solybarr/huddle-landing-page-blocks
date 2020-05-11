@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+
+/* PAGE VARIABLES */
+:root {
+    --fs: 18px;
+    --ff-primary: 'Open Sans', sans-serif;
+    --ff-secondary: 'Poppins', sans-serif;
+    --clr-pink: hsl(322, 100%, 66%);
+    --clr-paleCyan: hsl(193, 100%, 96%);
+    --clr-darkCyan: hsl(192, 100%, 9%);
+    --clr-grayishBlue: hsl(208, 11%, 55%);
+}
+
+/* GENERAL STYLES */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: var(--fs);
+    font-family: var(--ff-primary);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    font-family: var(--ff-secondary);
+}
+
+
+/* HEADER */
+
+header {
+    background-image: url('images/bg-hero-mobile.svg');
+    background-color: var(--clr-paleCyan);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2em;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2em;
+    margin-bottom: 5em;
+}
+
+.logo {
+    width: 150px;
+}
+
+.btn {
+    background-color: white;
+    box-shadow: 0 3px 10px hsla(0, 0%, 0%, .2);
+    padding: .5em 1.5em;
+    border-radius: 50px;
+    font-weight: 700;
+    color: var(--clr-darkCyan);
+    display: inline-block;
+}
+
+.hero__content {
+    text-align: center;
+}
+
+.hero__content h1 {
+    margin-bottom: 1em;
+}
+
+.hero__content .btn {
+    margin: 2em 0;
+}
+
+.accent {
+    background-color: var(--clr-pink);
+    color: white;
+    padding: 1em 4em;
+}
+
+.hero__img {
+    margin: 2em 0;
+}
+
+/* CONTENT */
+
+article {
+    box-shadow: 0 0px 10px hsla(0, 0%, 0%, .1);
+    border-radius: 25px;
+    margin: 2.5em 0;
+    padding: 2.5em;
+}
+
+article img {
+    margin: 1em 0 2em;
+}
+
+.article__text {
+    text-align: center;
+}
+
+article h2 {
+    margin-bottom: .85em;
+}
+
+
+
+/* FOOTER */
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width:350px) {
+    .top-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .logo {
+        margin-bottom: 1.5em;
+    }
+}
