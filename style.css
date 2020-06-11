@@ -125,7 +125,7 @@ article h2 {
 
 
 .container-cta {
-    width: 80%;
+    width: 90%;
     position: relative;
     margin: 0 auto;
 }
@@ -269,4 +269,52 @@ footer a {
         padding: 1em 5.5em;
         font-size: 1.35rem;
     }
+
+    .main {
+        margin-top: 6em;
+    }
+
+    article {
+        margin-top: 4em;
+    }
+
+    .article__text h2 {
+        font-size: 2.5rem;
+        margin-top: 1.75em;
+    }
+
+    .article__text p {
+        font-size: 1.75rem;
+        color: var(--clr-grayishBlue);
+    }
+
+    section {
+        margin-bottom: 23em;
+    }
+
+    .container-cta {
+        width: 90%;
+        position: relative;
+        /* margin: 0 auto; */
+    }
+
+    .cta {
+        top: -230px;
+        left: 10%;
+    }
+
+    .cta h1 {
+        /* font-size: 2.25rem; */
+        font-size: 1.75rem;
+        margin-bottom: 1.5em;
+    }
+
+    .footer__logo {
+        width: 350px;
+    }
+
+    .footer__text {
+        font-size: 1.75rem;
+    }
+
 }
